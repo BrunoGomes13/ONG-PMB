@@ -1,0 +1,231 @@
+/* Reset */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* Navegadores */
+.navbar-brand img{
+    height: 40px;
+    border-radius: 5px;
+}
+.container-fluid{
+    background-color: #04643f;
+    padding: 10px;
+}
+.navbar{
+    padding: 0;
+}
+.navbar-toggler {
+    color: #fff;
+    border-color: #fff;
+}
+.navbar-brand img{
+    width: 100px;
+    height: 100px;
+}
+
+.navbar-toggler-icon {
+    background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='white' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E");
+}
+.nav-link{
+    font-weight: bold;
+    font-size: 15px;
+    color: #999292;
+}
+.nav-link:hover{
+    color: #fff;
+}
+/* Quem Somos */
+#container-apresentacao{
+    background-color: #999292;
+}
+.titulos{
+    text-align: center;
+    padding: 25px 0 0 0;
+    font-weight: bold;
+}
+.explicacao{
+    text-align: center;
+    font-weight: bold;
+  line-height: 20px;  
+  padding: 0 15px 25px 15px;
+}
+
+/* Projetos */
+#projetos{
+padding: 0 0 20px 0;
+}
+.titulo-projetos{
+    padding: 25px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.subtopicos-projetos{
+    border: 1px solid #606060;
+    margin: 0px 15px;
+    border-radius: 5px;
+}
+.subtitulos-projetos{
+    padding: 20px 0 10px 15px;
+}
+.explicacao-projetos{
+    padding: 0 15px;
+    font-size: 20px;
+}
+
+/* Relatos */
+#relatos{
+background-color: #f7f3f3;
+padding: 0 0 20px 0;
+}
+.depoimentos{
+    padding: 10px 0;
+}
+.relatos-explicacao,
+.nome-relatos{
+    padding: 10px 15px 0px 15px;
+    margin-bottom: 0;
+}
+.relatos-explicacao{
+    font-size: 20px;
+    font-weight: bold;
+}
+.nome-relatos{
+    color:#999292
+}
+/* Galeria */
+.titulo-galeria{
+    padding: 25px 0;
+    text-align: center;
+    font-weight: bold;
+}
+.card-title,
+.card-text{
+    font-weight: bold;
+    list-style: none;
+}
+.card-text{
+    padding: 10px 20px;
+}
+ul{
+    padding-left: 0;
+}
+.card{
+    border: 1px solid #000;
+    margin: 0 auto;
+}
+.col{
+    margin-bottom: 20px;
+}
+.col:hover{
+    transform: scale(1.1);
+}
+.btn{
+    background-color: #04643f;
+    border: none;
+    transition: 0.4s;
+}
+.btn:hover{
+    background-color: #119260;
+    opacity: 0.4;
+}
+/* Contato */
+#contato{
+    background-color: #999292;
+    padding: 0 0 20px 0;
+}
+#email-usuario,
+#mensagem-usuario,
+#nome-usuario{
+    display: block;
+    width: 100%;
+    border-radius: 5px;
+    border: none;
+    padding: 10px 10px;
+}
+.inputs{
+    padding: 0 20px 20px 20px;
+}
+#botao{
+    padding: 10px 10px;
+    background-color: #04643f;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    transition: 0.4s;
+}
+#botao:hover{
+    opacity: 0.5;
+}
+
+/* Rodapé */
+footer{
+    background-color: #04643f;
+    color: #000;
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+/* Modal de sucesso */
+.modal-body{
+    font-weight: bold;
+}
+
+/* Responsividade */
+/* Mobiles */
+@media (max-width:600px){
+.col{
+    margin-bottom: 60px;
+}
+.explicacao{
+    padding: 0 30px 25px 30px;
+}
+.titulo-galeria{
+    margin-bottom: 30px;
+}
+}
+
+/* Ipads */
+@media (min-width:700px){
+    /*  */
+    /* Projetos */
+    #projetos{
+        display: flex;
+        justify-content: space-between;
+    }
+    /* Galeria */
+    .col{
+        margin-bottom: 60px;
+    }
+    .titulo-galeria{
+        padding: 30px 0;
+    }
+    /* Contato */
+    label{
+        font-size: 20px;
+    }
+    .nav-link{
+        font-size: 20px;
+    }
+    .navbar-brand img{
+        width: 130px;
+        height: 130px;
+    }
+}
+
+@media (min-width:1000px){
+    /* Home */
+    .explicacao{
+        padding: 10px 30px 25px 30px;
+    }
+    .depoimentos{
+        padding: 20px 20px;
+    } 
+    .card-text{
+        line-height: 25px;
+    }
+}
